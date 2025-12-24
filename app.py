@@ -15,19 +15,53 @@ st.set_page_config(
 # =========================
 st.markdown("""
 <style>
-.chat-bubble-user {
-    background-color: #DCF8C6;
-    padding: 10px 14px;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    text-align: right;
+/* Background halaman */
+.stApp {
+    background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
 }
+
+/* Container chat */
+.chat-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Bubble User */
+.chat-bubble-user {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 18px 18px 4px 18px;
+    margin: 8px 0 8px auto;
+    width: fit-content;
+    max-width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-size: 15px;
+}
+
+/* Bubble Bot */
 .chat-bubble-bot {
-    background-color: #F1F0F0;
-    padding: 10px 14px;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    text-align: left;
+    background: #ffffff;
+    color: #333;
+    padding: 12px 16px;
+    border-radius: 18px 18px 18px 4px;
+    margin: 8px auto 8px 0;
+    width: fit-content;
+    max-width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 15px;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    color: #1f2937;
+}
+
+/* Caption */
+.stCaption {
+    text-align: center;
+    color: #6b7280;
 }
 </style>
 """, unsafe_allow_html=True)
