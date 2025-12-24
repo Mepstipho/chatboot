@@ -15,21 +15,47 @@ st.set_page_config(
 # =========================
 st.markdown("""
 <style>
-/* Background halaman */
+/* =========================
+   GLOBAL
+========================= */
 .stApp {
     background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+    color: #1f2937; /* warna teks utama */
+    font-family: "Segoe UI", sans-serif;
 }
 
-/* Container chat */
+/* =========================
+   JUDUL & TEKS
+========================= */
+h1 {
+    text-align: center;
+    color: #2563eb; /* biru modern */
+    font-weight: 700;
+}
+
+.stCaption {
+    text-align: center;
+    color: #6b7280;
+}
+
+label {
+    color: #374151;
+}
+
+/* =========================
+   CONTAINER CHAT
+========================= */
 .chat-container {
     max-width: 700px;
     margin: auto;
 }
 
-/* Bubble User */
+/* =========================
+   CHAT USER
+========================= */
 .chat-bubble-user {
     background: linear-gradient(135deg, #4facfe, #00f2fe);
-    color: white;
+    color: #ffffff;
     padding: 12px 16px;
     border-radius: 18px 18px 4px 18px;
     margin: 8px 0 8px auto;
@@ -39,10 +65,12 @@ st.markdown("""
     font-size: 15px;
 }
 
-/* Bubble Bot */
+/* =========================
+   CHAT BOT
+========================= */
 .chat-bubble-bot {
     background: #ffffff;
-    color: #333;
+    color: #1f2937;
     padding: 12px 16px;
     border-radius: 18px 18px 18px 4px;
     margin: 8px auto 8px 0;
@@ -51,20 +79,9 @@ st.markdown("""
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     font-size: 15px;
 }
-
-/* Judul */
-h1 {
-    text-align: center;
-    color: #1f2937;
-}
-
-/* Caption */
-.stCaption {
-    text-align: center;
-    color: #6b7280;
-}
 </style>
 """, unsafe_allow_html=True)
+
 
 # =========================
 # JUDUL
